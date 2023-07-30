@@ -1,5 +1,5 @@
 import '../styles/Navbar.css'
-import logo from '../../public/pokeball.png'
+import {logo} from '../../public/pokeball.png'
 function Navbar(props){
     return(
         <>
