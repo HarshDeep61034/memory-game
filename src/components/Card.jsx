@@ -28,7 +28,11 @@ function Card(props) {
                     <h1>{pokemonData.name}</h1>
                     </div>
                     <div className="img">
-                    <img src={pokemonData.sprites && pokemonData.sprites.front_default} alt={pokemonData.name} />
+                    <img src={pokemonData.sprites &&
+                              pokemonData.sprites.other &&
+                              pokemonData.sprites.other['official-artwork'] &&
+                              pokemonData.sprites.other['official-artwork'].front_default} 
+                              alt={pokemonData.name} />
                     </div>
                     <h3>Abilities:</h3>
                     {pokemonData && pokemonData.abilities && (
